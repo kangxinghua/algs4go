@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	prepareCount := 1111
+	prepareCount := 11
 	acceptors := make([]*paxos.Acceptor, 0)
 	var wg sync.WaitGroup
 	wg.Add(prepareCount)

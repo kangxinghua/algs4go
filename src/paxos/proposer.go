@@ -37,7 +37,7 @@ func (p *proposer) Run() {
 	time.Sleep(time.Millisecond * time.Duration(x))// 随机暂停
 
 	acceptorCount := len(p.acceptors)
-	quorum := (acceptorCount / 2) + 1
+	quorum := (acceptorCount / 2)
 	prepareTime := 0;
 	for ; ; {
 		prepareTime++
